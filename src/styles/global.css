@@ -1,0 +1,103 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+  
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Headings */
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+  
+h2 {
+    font-size: 22px;
+    color: #444;
+}
+
+/* Buttons - General */
+button, .link-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1E90FF; /* צבע אחיד לכפתורים */
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.2s ease, transform 0.1s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Hover */
+button:hover, .link-button:hover {
+    background-color: #007bff;
+    transform: scale(1.02);
+}
+
+/* Remove underline */
+.link-button:visited,
+.link-button:focus,
+.link-button:active {
+    text-decoration: none;
+}
+
+/* Adjust icon inside buttons */
+.link-button img, button img {
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) invert(1); /* הופך ללבן כדי להשתלב בכחול */
+}
+
+/* TreeView Styling */
+.tree-container {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.tree-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tree-container li {
+    padding: 5px;
+    font-size: 16px;
+    border-left: 2px solid #007bff;
+    margin-left: 10px;
+}
+
+/* הקטנת כפתורים ושמירה על ריווח */
+.tree-buttons {
+    display: flex;
+    gap: 8px; /* מוסיף רווח קטן בין הכפתורים */
+    align-items: center;
+}
+
+.tree-buttons button {
+    padding: 6px 12px; /* מקטין את גודל הכפתור */
+    font-size: 14px; /* מקטין את הטקסט בתוך הכפתור */
+    border-radius: 6px; /* פינות מעוגלות בעדינות */
+}
